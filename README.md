@@ -11,4 +11,5 @@ Files are available in [src](./src)
 ##Utils  [Link](./src/Utils)
 * __Utils.java__  [Link](./src/Utils/Utils.java)
   * Common Utitilities
-  * Right now just GCD is availble
+    * GCD
+    * LCM

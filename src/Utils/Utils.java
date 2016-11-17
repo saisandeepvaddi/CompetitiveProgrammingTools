@@ -14,4 +14,11 @@ public class Utils {
         }
         return a;
     }
+
+    public static int LCM(int a, int b) {
+        return (a * b) / GCD(a, b);
+    }
+
+
+
 }
