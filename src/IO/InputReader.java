@@ -28,10 +28,7 @@ public class InputReader {
                 e.printStackTrace();
             }
         }
-
-
         return tokenizer.nextToken();
-
     }
 
     public int getInt() {
@@ -57,6 +54,15 @@ public class InputReader {
         }
         return arr;
     }
+
+    public long[] getLongArray(int length) {
+        long[] arr = new long[length];
+        for (int i = 0; i < length; i++) {
+            arr[i] = getLong();
+        }
+        return arr;
+    }
+
 
     public double[] getDoubleArray(int length) {
         double[] arr = new double[length];

@@ -6,7 +6,7 @@ Files are available in [src](./src)
 * __InputReader.java__  [Link](./src/IO/InputReader.java)  
   * Faster IO tools than Scanner.  
   * Reads trivial int, long, double, String inputs.  
-  * Reads int, double, String, Char Arrays.  
+  * Reads int, long, double, String, Char Arrays.  
   
 ##Utils  [Link](./src/Utils)
 * __Utils.java__  [Link](./src/Utils/Utils.java)
