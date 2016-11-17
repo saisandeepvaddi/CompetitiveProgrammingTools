@@ -15,10 +15,10 @@ public class Utils {
         return a;
     }
 
+    // Usage: Utils.LCM(a, b)
     public static int LCM(int a, int b) {
         return (a * b) / GCD(a, b);
     }
-
 
 
 }
