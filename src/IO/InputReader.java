@@ -20,7 +20,7 @@ public class InputReader {
         reader = new BufferedReader(new InputStreamReader(this.stream));
     }
 
-    private String next() {
+    private String getNext() {
         while (tokenizer == null || !tokenizer.hasMoreTokens()) {
             try {
                 tokenizer = new StringTokenizer(reader.readLine(), " ");
@@ -31,26 +31,26 @@ public class InputReader {
         return tokenizer.nextToken();
     }
 
-    public int nextInt() {
-        return Integer.parseInt(next());
+    public int getInt() {
+        return Integer.parseInt(getNext());
     }
 
-    public long nextLong() {
-        return Long.parseLong(next());
+    public long getLong() {
+        return Long.parseLong(getNext());
     }
 
-    public String nextLine() throws IOException {
-        return reader.readLine();
+    public String getString() {
+        return getNext();
     }
 
-    public double nextDouble() {
-        return Double.parseDouble(next());
+    public double getDouble() {
+        return Double.parseDouble(getNext());
     }
 
     public int[] getIntArray(int length) {
         int[] arr = new int[length];
         for (int i = 0; i < length; i++) {
-            arr[i] = nextInt();
+            arr[i] = getInt();
         }
         return arr;
     }
@@ -58,7 +58,7 @@ public class InputReader {
     public long[] getLongArray(int length) {
         long[] arr = new long[length];
         for (int i = 0; i < length; i++) {
-            arr[i] = nextLong();
+            arr[i] = getLong();
         }
         return arr;
     }
@@ -67,7 +67,7 @@ public class InputReader {
     public double[] getDoubleArray(int length) {
         double[] arr = new double[length];
         for (int i = 0; i < length; i++) {
-            arr[i] = nextDouble();
+            arr[i] = getDouble();
         }
         return arr;
     }
@@ -76,7 +76,7 @@ public class InputReader {
     public String[] getStringArray(int length) {
         String[] arr = new String[length];
         for (int i = 0; i < length; i++) {
-            arr[i] = next();
+            arr[i] = getString();
         }
         return arr;
     }
@@ -84,7 +84,7 @@ public class InputReader {
     public char[] getCharArray(int length) {
         char[] arr = new char[length];
         for (int i = 0; i < length; i++) {
-            arr[i] = next().charAt(0);
+            arr[i] = getNext().charAt(0);
         }
         return arr;
     }
