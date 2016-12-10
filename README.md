@@ -11,7 +11,7 @@ Files are available in [src](./src)
 Usage:
    
 InputReader in = new InputReader(System.in);
-int a = in.nextInt(); // long, double, string inputs are similar
+int a = in.getInt(); // long, double, string inputs are similar
 int[] arr = in.getIntArray(5); // Reads 5 integers into array.
 ```
   
