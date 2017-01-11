@@ -20,7 +20,7 @@ public class InputReader {
         reader = new BufferedReader(new InputStreamReader(this.stream));
     }
 
-    private String next() {
+    public String next() {
         while (tokenizer == null || !tokenizer.hasMoreTokens()) {
             try {
                 tokenizer = new StringTokenizer(reader.readLine(), " ");
