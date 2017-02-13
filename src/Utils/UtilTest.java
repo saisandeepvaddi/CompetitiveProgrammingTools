@@ -1,15 +1,16 @@
 package Utils;
 
+import java.util.List;
+
 /**
  * About the code :
  */
 public class UtilTest {
     public static void main(String[] args) {
-        int a = 192;
-        int b = 234;
-        int gcd = Utils.GCD(a, b);
-        int lcm = Utils.LCM(a, b);
-        System.out.println(gcd);
-        System.out.println(lcm);
+        Utils.Graph graph = new Utils.Graph();
+        graph.addEdge(new Utils.Edge(1, 2));
+        graph.addEdge(new Utils.Edge(0, 1, 5));
+        List<Utils.Edge> edges = graph.getAllEdges();
+        edges.remove(0);
     }
 }
