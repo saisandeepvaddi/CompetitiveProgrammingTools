@@ -17,12 +17,17 @@ int[] arr = in.getIntArray(5); // Reads 5 integers into array.
   
 ##Utils  [Link](./src/Utils)
 * __Utils.java__  [Link](./src/Utils/Utils.java)
-  * Common Utitilities
+  * Common Utilities
     * GCD
     * LCM
+    * Graphs
 ```
 Usage:
    
 int gcd = Utils.GCD(3, 5);
 int lcm = Utils.LCM(3, 5);
+--- Graphs ---
+Utils.Graph graph = new Utils.Graph();
+/* For matrix representation of graph, pass true in constructor for directed graph */
+Utils.MatrixGraph graph = new Utils.MatrixGraph(); 
 ```

@@ -11,6 +11,6 @@ public class UtilTest {
         graph.addEdge(new Utils.Edge(1, 2));
         graph.addEdge(new Utils.Edge(0, 1, 5));
         List<Utils.Edge> edges = graph.getAllEdges();
-        edges.remove(0);
+        
     }
 }
