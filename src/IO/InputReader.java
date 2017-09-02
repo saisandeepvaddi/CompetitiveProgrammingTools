@@ -83,8 +83,9 @@ public class InputReader {
 
     public char[] getCharArray(int length) {
         char[] arr = new char[length];
+        String word = next();
         for (int i = 0; i < length; i++) {
-            arr[i] = next().charAt(0);
+            arr[i] = word.charAt(0);
         }
         return arr;
     }
